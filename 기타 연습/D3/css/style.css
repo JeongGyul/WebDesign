@@ -12,6 +12,8 @@
 img { 
     vertical-align: top;
 }
+
+
 .wrap {
     width: 100%;
     height: 970px;
@@ -19,13 +21,64 @@ img {
 }
 .top {
     height: 850px;
-    background: #fcc;
     display: flex;
 }
 header {
     width: 200px;
     height: 100%;
-    background: #369;
+    background: #fcfaeb;
+    padding: 100px 0;
+}
+header h1 {
+    margin-bottom: 30px;
+}
+nav {
+    padding: 0 20px;
+}
+nav > ul > li > a {
+    display: block;
+    background: #6d8049;
+    color: #fff;
+    padding: 10px;
+}
+nav > ul > li {
+    position: relative;
+}
+nav > ul > li:hover > a,
+nav > ul > li > a:focus,
+nav > ul > li.on > a {
+    background: #ae6105;
+}
+.sub {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: 1000px;
+    z-index: 10;
+    display: none;
+}
+.sub li {
+    display: inline-block;
+}
+.sub li a {
+    display: block;
+    padding: 10px 20px;
+    width: 200px;
+    color: #fff;
+}
+.sub li a:hover,
+.sub li a:focus {
+    background: #6d8049;
+}
+.menubg {
+    width: calc(100% - 180px);
+    height: 152px;
+    position: absolute;
+    top: 148px;
+    left: 180px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
 }
 .contents {
     width: calc(100% - 200px);
