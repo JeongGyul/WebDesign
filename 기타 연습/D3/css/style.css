@@ -80,6 +80,16 @@ nav > ul > li.on > a {
     z-index: 9;
     display: none;
 }
+.spot {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+.spot a:first-child {
+    border-right: 1px solid #6d8049;
+    padding-right: 5px;
+}
+
 .contents {
     width: calc(100% - 200px);
     height: 100%;
@@ -88,10 +98,63 @@ nav > ul > li.on > a {
 .slide {
     height: 400px;
     background: #fff;
+    position: relative;
 }
+.slide ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide ul li a {
+    display: block; height: 100%;
+}
+.slide ul li.s1 {
+    background: url(../images/slide_d_01.jpg) no-repeat center/cover;
+    display: block;
+}
+.slide ul li.s2 {
+    background: url(../images/slide_d_02.jpg) no-repeat center/cover;
+}
+.slide ul li.s3 {
+    background: url(../images/slide_d_03.jpg) no-repeat center/cover;
+}
+
 .banner {
     height: 200px;
-    background: tomato;
+    background: #6d8049;
+    padding: 0 50px;
+    position: relative;
+}
+.banner a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.imgBox {
+    margin-right: 20px;
+}
+.arrow {
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}
+.txtBox h2 {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.txtBox p {
+    color: #fff;
+    font-size: 20px;
+}
+.txtBox p span {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 20px;
 }
 .con {
     height: 250px;
